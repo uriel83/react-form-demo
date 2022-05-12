@@ -25,28 +25,32 @@ export default class RegisterFormClass extends React.Component{
                 <label htmlFor="name-input">
                     Name
                 </label>
+                </div>
                 <input 
                     type="string" 
                     name="name" 
                     id="name-input"
                     value={this.state.name}
                     onChange={this.updateFormState}/>
-            </div>
-              <div className="form-group mt-2">
-                <label htmlFor="email-input">
-                    Email
-                </label>
+            
+                <div className="form-group mt-2">
+                    <label htmlFor="email-input">
+                        Email
+                    </label>
+                </div>   
                 <input 
                     type="email" 
                     name="email" 
                     id="email-input"
                     value={this.state.email}
                     onChange={this.updateFormState}/>
-            </div>
-            <div>
-                <label htmlFor="password-input">
-                    Password
-                </label>
+            
+                <div>
+                <div className="form-group mt-2">
+                    <label htmlFor="password-input">
+                        Password
+                    </label>
+                </div>    
                 <input 
                     type="password" 
                     name="password" 

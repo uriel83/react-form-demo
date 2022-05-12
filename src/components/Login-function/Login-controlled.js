@@ -44,24 +44,24 @@ export default function LoginControlled(){
                 <label htmlFor="email-input">
                     Email
                 </label>
+             </div>   
                 <input 
                     type="email" 
                     name="email" 
                     id="email-input"
                     value={loginFormValues.email}
                     onChange={updateFormState}/>
-            </div>
             <div>
                 <label htmlFor="password-input">
                     Password
                 </label>
+            </div>  
                 <input 
                     type="password" 
                     name="password" 
                     id="password-input"
                     value={loginFormValues.password}
                     onChange={updateFormState}/>
-            </div>
             <div>
                 <button className="btn btn-secondary mt-3" type="submit">Submit</button>
             </div>

@@ -1,18 +1,14 @@
 import React from "react";
+import FormWithState from "../../utils/form-with-state"
 
-export default class ControlledClass extends React.Component {
-    state ={
-        email:'',
-        password: ''
-    }
-    updateFormState =(event) =>{
-        this.setState({
-            [event.target.name] : event.target.value
-        })
+class NewControlledClass extends React.Component {
+    
+    constructor(props){
+        super(props)
     }
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.email, this.state.password);
+        console.log(this.props.state.email, this.props.state.password);
     }
     render(){
         return(
@@ -21,24 +17,26 @@ export default class ControlledClass extends React.Component {
                 <label htmlFor="email-input">
                     Email
                 </label>
-              </div>   
+              </div>  
                 <input 
                     type="email" 
                     name="email" 
                     id="email-input"
-                    value={this.state.email}
-                    onChange={this.updateFormState}/>
+                    value={this.props.state.email}
+                    onChange={this.props.updateFormState}/>
+            
             <div>
                 <label htmlFor="password-input">
                     Password
                 </label>
-            </div>   
+             </div>   
                 <input 
                     type="password" 
                     name="password" 
                     id="password-input"
-                    value={this.state.password}
-                    onChange={this.updateFormState}/>   
+                    value={this.props.state.password}
+                    onChange={this.props.updateFormState}/>
+            
             <div>
                 <button className="btn btn-secondary mt-3" type="submit">Submit</button>
             </div>
@@ -46,3 +44,7 @@ export default class ControlledClass extends React.Component {
         )
     }
 }
+export default FormWithState({
+    email:'',
+    password: ''
+})(NewControlledClass)
