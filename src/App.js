@@ -4,6 +4,7 @@ import ControlledClass from "./components/LoginClass/controlledClass";
 // import RegisterFormClass from "./components/LoginClass/RegisterFormClass"
 import NewControlledClass from './components/LoginFormStateClass/NewControlledClass'
 import FormByRenderProps from './components/RenderPropsClass/FormByRenderProps'
+import LoginCustomHooksFunction from "./components/LoginCustomHooksFunction/LoginCustomHooksFunction"
 import './App.css';
 
 function App() {
@@ -14,7 +15,10 @@ function App() {
        <RegisterFormClass />
       </div>   */}
      
-     
+     <div className="mt-4" style={{float: 'left', marginLeft:40, color:'green'}}>
+      <h4>Login Custom Hooks Function</h4>
+        <LoginCustomHooksFunction />
+      </div>
       <div className="mt-4" style={{float: 'left', marginLeft:40, color:'green'}}>
       <h4>Controlled Function</h4>
         <LoginControlled />
