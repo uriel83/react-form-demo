@@ -7,20 +7,6 @@ export default function LoginControlled(){
         password : ''
     });
 
-    // const updateEmailState =(event) =>{
-    //     setLoginFormValues({
-    //         email: event.target.value,
-    //         password:loginFormValues.password
-    //     })
-    // }
-
-    // const updatePasswordState =(event) =>{
-    //     setLoginFormValues({
-    //         email:loginFormValues.email,
-    //         password: event.target.value
-    //     })
-    // }
-
     const updateFormState =(event) =>{
         setLoginFormValues({
             ...loginFormValues,
@@ -32,11 +18,6 @@ export default function LoginControlled(){
         event.preventDefault();
         console.log(loginFormValues.email, loginFormValues.password);
     }
-
-    
-
-
-
 
     return(
         <form onSubmit={handleSubmit}>

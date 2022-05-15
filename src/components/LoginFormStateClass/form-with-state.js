@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
+
+//  export default (initialState) => (FormComponent) => {
 
 export default function FormWithState(initialState){
     return (FormComponent) =>{
-
-//  export default (initialState) => (FormComponent) => {
         return class FromWithState extends React.Component {
             constructor(props){
                 super(props);
@@ -18,12 +18,11 @@ export default function FormWithState(initialState){
                 })
             }
 
-            
             render(){
                 return(
                     <FormComponent state={this.state} updateFormState={this.updateFormState}/>
                 )
             }
         }
-  }
+    }
 }

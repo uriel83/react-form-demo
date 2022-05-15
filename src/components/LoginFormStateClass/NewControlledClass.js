@@ -1,11 +1,9 @@
 import React from "react";
-import FormWithState from "../../utils/form-with-state"
+import FormWithState from "./form-with-state"
 
 class NewControlledClass extends React.Component {
     
-    constructor(props){
-        super(props)
-    }
+  
     handleSubmit = (event) => {
         event.preventDefault();
         console.log(this.props.state.email, this.props.state.password);
