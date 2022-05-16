@@ -16,7 +16,8 @@ export default function UncontrolledComponents(){
                     Email
                 </label>
              </div>   
-                <input 
+                <input
+                    className="form-control" 
                     type="email" 
                     name="email" 
                     id="email-input"
@@ -26,7 +27,8 @@ export default function UncontrolledComponents(){
                     Password
                 </label>
             </div>    
-                <input 
+                <input
+                    className="form-control" 
                     type="password" 
                     name="password" 
                     id="password-input"

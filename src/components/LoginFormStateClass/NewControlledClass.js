@@ -17,6 +17,7 @@ class NewControlledClass extends React.Component {
                 </label>
               </div>  
                 <input 
+                    className="form-control"
                     type="email" 
                     name="email" 
                     id="email-input"
@@ -29,6 +30,7 @@ class NewControlledClass extends React.Component {
                 </label>
              </div>   
                 <input 
+                    className="form-control"
                     type="password" 
                     name="password" 
                     id="password-input"

@@ -23,7 +23,8 @@ export default class FormByRenderProps extends React.Component {
                                     Email
                                 </label>
                             </div>  
-                                <input 
+                                <input
+                                    className="form-control" 
                                     type="email" 
                                     name="email" 
                                     id="email-input"
@@ -35,7 +36,8 @@ export default class FormByRenderProps extends React.Component {
                                     Password
                                 </label>
                             </div>   
-                                <input 
+                                <input
+                                    className="form-control" 
                                     type="password" 
                                     name="password" 
                                     id="password-input"

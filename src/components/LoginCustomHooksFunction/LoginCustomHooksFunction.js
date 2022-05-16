@@ -24,7 +24,8 @@ export default function LoginCustomHooksFunction(){
                     Email
                 </label>
              </div>   
-                <input 
+                <input
+                    className="form-control" 
                     type="email" 
                     name="email" 
                     id="email-input"
@@ -35,7 +36,8 @@ export default function LoginCustomHooksFunction(){
                     Password
                 </label>
             </div>  
-                <input 
+                <input
+                    className="form-control" 
                     type="password" 
                     name="password" 
                     id="password-input"

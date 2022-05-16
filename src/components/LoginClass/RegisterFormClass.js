@@ -52,6 +52,7 @@ export default class RegisterFormClass extends React.Component{
                     </label>
                 </div>    
                 <input 
+                    className="form-control"
                     type="password" 
                     name="password" 
                     id="password-input"
