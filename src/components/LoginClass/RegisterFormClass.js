@@ -2,7 +2,8 @@ import React from "react";
 
 export default class RegisterFormClass extends React.Component{
     state ={
-        name:'',
+        firstName:'',
+        lastName:'',
         email:'',
         password: ''
     }
@@ -22,23 +23,36 @@ export default class RegisterFormClass extends React.Component{
         return(
             <form onSubmit={this.handleSubmit}>
                 <div className="form-group mt-2">
-                <label htmlFor="name-input">
-                    Name
+                <label htmlFor="firstName-input">
+                    firstName
                 </label>
                 </div>
                 <input 
+                    className="form-control"
                     type="string" 
-                    name="name" 
-                    id="name-input"
-                    value={this.state.name}
+                    name="firstName" 
+                    id="firstName-input"
+                    value={this.state.firstName}
                     onChange={this.updateFormState}/>
-            
+                <div className="form-group mt-2">
+                <label htmlFor="lastName-input">
+                lastName
+                </label>
+                </div>
+                <input 
+                    className="form-control"
+                    type="string" 
+                    name="lastName" 
+                    id="lastName-input"
+                    value={this.state.lastName}
+                    onChange={this.updateFormState}/>
                 <div className="form-group mt-2">
                     <label htmlFor="email-input">
                         Email
                     </label>
                 </div>   
                 <input 
+                    className="form-control"
                     type="email" 
                     name="email" 
                     id="email-input"
