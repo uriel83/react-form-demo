@@ -9,6 +9,8 @@ import LoginCustomHooksFunction from "./components/LoginCustomHooksFunction/Logi
 import LoginFormik from "./components/LoginFormik/LoginFormik"
 import RegisterFormik from "./components/RegisterFormik/RegisterFormik"
 import ToDoList from "./components/ToDoList/ToDoList"
+import SendMessage from "./components/connectedComponentsContext/SendMessage";
+import GetMessage from "./components/connectedComponentsContext/GetMessage";
 import './App.css';
 
 function App() {
@@ -55,6 +57,14 @@ function App() {
       <div className="mt-4" style={{float: 'left', marginLeft:40, color:'#BDB76B'}}>
       <h5>ToDoList</h5>
         <ToDoList token= {token}/>
+      </div>
+      <div className="mt-4" style={{float: 'left', marginLeft:40, color:'red'}}>
+      <h5>SendMessage</h5>
+        <SendMessage />
+      </div>
+      <div className="mt-4" style={{float: 'left', marginLeft:40, color:'red'}}>
+      <h5>GetMessage</h5>
+        <GetMessage />
       </div>
     </div>
   );
