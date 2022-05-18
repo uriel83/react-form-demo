@@ -18,13 +18,13 @@ export default function ToDoList ({token}) {
     return(
         <div>
             {!token ? <h2>no token</h2> : <h2>token</h2>}
-                <ul>
+                <div className="row">
                     {
                         tasks.map(function(task){
-                            return <TodoItem task = {task} key={task.id} />
+                            return <TodoItem task = {task} key={task.id}  />
                         })
                     }
-                </ul>
+                </div>
            </div>
     )
 }

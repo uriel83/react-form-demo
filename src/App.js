@@ -52,7 +52,7 @@ function App() {
       <h5>Login Formik Function</h5>
         <LoginFormik tokenCB={setToken}/>
       </div>
-      <div className="mt-4" style={{float: 'left', marginLeft:40, color:'#BDB76B', width:400}}>
+      <div className="mt-4" style={{float: 'left', marginLeft:40, color:'#BDB76B'}}>
       <h5>ToDoList</h5>
         <ToDoList token= {token}/>
       </div>
